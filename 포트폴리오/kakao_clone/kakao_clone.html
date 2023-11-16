@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kakao</title>
+
+    <style>
+
+        *{margin: 0; padding: 0;}
+        a{text-decoration: none; color: #000;}
+        ul,li{list-style: none;}
+        img{display: block; border: 0;}
+
+        #wrap{
+            width: 100%;
+        }
+
+        /* header */
+
+        header{
+            width: 100%;
+            height: 80px;
+            float: left;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+        }
+
+        #in_header{
+            width: 1400px;
+            height: 100%;
+            margin: 0 auto;
+            line-height: 80px;
+        }
+
+        #logo{
+            width: auto;
+            height: 100%;
+            float: left;
+        }
+
+        #logo span{
+            font-weight: 900;
+        }
+
+        #menu_wrap{
+            width: auto;
+            height: 100%;
+            float: left;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -392px;
+        }
+
+        #menu_wrap li{
+            width: auto;
+            height: 100%;
+            float: left;
+            margin-right: 80px;
+            font-weight: 900;
+        }
+
+        #side_menu{
+            width: auto;
+            height: 100%;
+            float: right;
+            font-weight: 900;
+        }
+
+        /* section01 */
+
+        section{
+            width: 100%;
+            float: left;
+        }
+
+        #sec01{
+            height: 800px;
+            background: url(img/main.jpg) no-repeat center/cover;
+        }
+
+        /* section02 */
+
+        .container{
+            width: 1400px;
+            margin: 50px auto;
+        }
+
+        .top_con{
+            width: 446.666px;
+            float: left;
+            margin-right: 30px;
+        }
+
+        .top_con:last-child{
+            margin-right: 0;
+        }
+
+        .top_con h5{
+            width: 100%;
+            color: dimgray;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+
+        .top_con h3{
+            width: 100%;
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+
+        .top_con p{
+            width: 100%;
+            color: #888;
+            font: 14px/24px '';
+        }
+        
+        #txt_wrap{
+            width: 100%;
+        }
+
+        #txt_wrap li{
+            width: auto;
+        }
+
+        #txt_wrap li:nth-child(1){float: left;}
+
+        #txt_wrap li:nth-child(2){float: right;}
+
+        #txt_wrap h3{
+            font-size: 28px;
+            letter-spacing: -2px;
+        }
+
+        /* section03 */
+
+        #sec03{
+            margin-bottom: 100px;
+        }
+
+        .con_wrap{
+            width: 100%;
+            margin-bottom: 40px;
+            overflow: hidden;
+        }
+
+        .bottom_con{
+            width: 446.666px;
+            float: left;
+            margin-right: 30px;
+
+        }
+
+        .bottom_con:nth-child(3n){
+            margin-right: 0;
+        }
+
+        .bottom_con h3{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .bottom_con p{
+            width: 100%;
+            font: 14px/24px '';
+            color: dimgray;
+            letter-spacing: -1px;
+        }
+
+        .img_wrap{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .img_wrap img{
+            width: 100%;
+        }
+
+        /* footer */
+
+        footer{
+            width: 100%;
+            height: 100px;
+            float: left;
+            border-top: 1px solid lightgray;
+        }
+
+        #in_footer{
+            width: 1400px;
+            margin: 40px auto 0 auto;
+            text-align: center;
+        }
+
+        #foot_logo{
+            width: auto;
+            height: 100%;
+            float: left;
+            font-size: 14px;
+            margin-right: 50px;
+        }
+
+        #foot_logo span{
+            font-weight: 900;
+        }
+
+        #site_map{
+            width: auto;
+            height: 100%;
+            float: left;
+        }
+
+        #site_map li{
+            width: auto;
+            height: 100%;
+            float: left;
+            border-right: 1px solid gray;
+            padding: 0 10px;
+            font: 12px/10px '';
+        }
+
+        #site_map li:last-child{
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+
+        <!-- header -->
+        <header>
+            <div id="in_header">
+                <div id="logo">
+                    <a href="#">kakao<span>enterprise</span></a>
+                </div>
+                <ul id="menu_wrap">
+                    <li> <a href="#">소개</a></li>
+                    <li> <a href="#">새소식</a></li>
+                    <li> <a href="#">서비스</a></li>
+                    <li> <a href="#">기술</a></li>
+                    <li> <a href="#">기술블로그</a></li>
+                    <li> <a href="#">제휴문의</a></li>
+                </ul>
+                <div id="side_menu">
+                    <a href="#">인재영입</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- section01 -->
+        <section id="sec01"></section>
+
+        <!-- section02 -->
+        <section id="sec02">
+            <div class="container">
+                <div class="top_con">
+                    <h5>NEWS</h5>
+                    <h3>카카오엔터프라이즈-구름, SaaS 및 교육 분야 협업 위한 업무협약 체결</h3>
+                    <p>- 양사 서비스 연동해 기업 교육 플랫폼 제공 사업 및 다양한 B2B 서비스 제공</p>
+                </div>
+                <div class="top_con">
+                    <h5>COMPANY</h5>
+                    <ul id="txt_wrap">
+                        <li>
+                            <h3>Why not?</h3>
+                            <p>당연한 것들에 대한 도전</p>
+                        </li>
+                        <li>
+                            <h3>If Kakao Enterprise, ( &nbsp;&nbsp; )</h3>
+                            <p>카카오스런 생각에 대한 기대</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top_con">
+                    <h5>PARTNERSHIP</h5>
+                    <h3>카카오엔터프라이즈는 AI 기술과 플랫폼을 
+                        바탕으로 당신과 함께 더 나은 세상을 만들어갑니다.</h3>
+                </div>
+            </div>
+            
+            <!-- section03 -->
+            <div id="sec03">
+                    <div class="container">
+                        <div class="con_wrap">
+                            <div class="bottom_con">
+                                <div class="img_wrap">
+                                    <img src="img/con01.jpg" alt="tech">
+                                </div>
+                                <h3>기술블로그 Tech &</h3>
+                                <p>다양한 연구활동과 기술 소식, AI 회사에서 일하는 크루들과의 만남, 그리고 우리가 꿈꾸는 미래에 대한 이야기를 담았습니다.
+                                </p>
+                            </div>
+                            <div class="bottom_con">
+                                <div class="img_wrap">
+                                    <img src="img/con02.jpg" alt="kakao_i">
+                                </div>
+                                <h3>카카오엔터프라이즈의 핵심기술, Kakao i</h3>
+                                <p>AI 플랫폼 Kakao i는 카카오엔터프라이즈가 
+                                    보유한 핵심기술이자 미래 기술의 집약체입니다.
+                                </p>
+                            </div>
+                            <div class="bottom_con">
+                                <div class="img_wrap">
+                                    <img src="img/con03.jpg" alt="crew">
+                                </div>
+                                <h3>새로운 길에 도전할 크루를 기다립니다.</h3>
+                                <p>AI 기술을 통해 꿈을 현실로 만드는 
+                                    여정에 함께 해주세요. 아무도 가보지 않은 길을 가는 
+                                    카카오엔터프라이즈 호가 당신의 탑승을 기다립니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="con_wrap">
+                            <div class="bottom_con">
+                                <div class="img_wrap">
+                                    <img src="img/con04.jpg" alt="">
+                                </div>
+                                <h3>요즘 일하는 방식, 카카오워크</h3>
+                                <p>누구에게나 쉬운 사용법을 갖춘 우리 회사만의 업무 메신저를 소개합니다. 일과 일상을 나누고,
+                                     AI와 검색 기능으로 한층 더 스마트해진 업무를 경험할 수 있습니다.</p>
+                            </div>
+                            <div class="bottom_con">
+                                <div class="img_wrap">
+                                    <img src="img/con05.jpg" alt="">
+                                </div>
+                                <h3>AI를 통한 일상의 혁신, 카카오 i 커넥트</h3>
+                                <p>카카오는 이미 우리들의 일상 깊숙이 자리 잡았습니다. 쉽고 편리한 플랫폼에 다양한 AI 기술을 더하여 차별화된 서비스, 
+                                    특별한 비즈니스를 만날 수 있습니다.</p>
+                            </div>
+                            <div class="bottom_con">
+                                <div class="img_wrap">
+                                    <img src="img/con06.jpg" alt="">
+                                </div>
+                                <h3>10년 노하우를 서비스로, 카카오 i 클라우드</h3>
+                                <p>기업의 다양한 클라우드 환경을 연결해 쉽고 스마트한 혁신을 돕습니다. 
+                                    누구나 쉽고 편리하게 클라우드 기술의 혜택을 누리고, 비즈니스에 적용할 수 있습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+        </section>
+        <!-- footer -->
+        <footer>
+            <div id="in_footer">
+                <div id="foot_logo">
+                    <a href="#">kakao<span>enterprise</span></a>
+                </div>
+                <ul id="site_map">
+                    <li><a href="#">회사정보</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">사이버윤리실</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">대표메일</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

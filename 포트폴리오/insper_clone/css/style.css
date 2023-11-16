@@ -1,0 +1,154 @@
+@import url(reset.css);
+@import url(common.css);
+
+header{
+    width: 100%;
+    height: 80px;
+    padding: 0 350px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+    font-size: 18px;
+    border: 1px solid #dbdbdb;
+}
+
+.logo{
+    width: 220px;
+    position: relative;
+    z-index: 10;
+}
+
+.menu_wrap{
+    display: flex;
+    align-items: center;
+    letter-spacing: -1px;
+}
+
+.menu_wrap li{
+    margin-right: 35px;
+}
+
+.side_menu{
+    padding: 0 40px 0 20px;
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+}
+
+.side_menu a{
+    font-weight: 900;
+    color: #fff;
+}
+
+.small_arrow{
+    float: right;
+    margin-left: 10px;
+}
+
+/*header end*/
+
+section{
+    width: 100%;
+    height: 850px;
+    padding: 0 200px;
+}
+
+.main_bg{
+    height: 100%;
+    background:no-repeat url(https://www.insper.co.kr/resources/frontoffice/images/common/main_season2_back3.jpg) center / cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.blue_box{
+    width: 330px;
+    height: 0;
+    background-color: rgba(1, 1, 75, 0.3);
+    position: absolute;
+    left: 166px;
+    top: 0;
+    animation: blue_ani 1.2s 1 forwards;
+}
+
+@keyframes blue_ani{
+
+    100%{
+        height: 550px;
+    }
+
+}
+
+.title{
+    font-size: 85px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    color: #fff;
+    position: absolute;
+    top: -120px;
+    left: 328px;
+    opacity: 0;
+    animation: title_ani 0.7s 1 forwards;
+}
+
+@keyframes title_ani{
+    100%{
+        top: 120px;
+        opacity: 1;
+    }
+}
+
+.red_box{
+    width: 250px;
+    height: 250px;
+    background-color: orangered;
+    padding: 48px;
+    font-size: 26px;
+    font-weight: 900;
+    color: #fff;
+    position: absolute;
+    bottom: 95px;
+    right: -250px;
+    z-index: 10;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    animation: red_ani 1.2s 0.5s 1 forwards;
+}
+
+@keyframes red_ani{
+    100%{
+        right: 275px;
+    }
+}
+
+.red_box:hover{
+    transform: translate(20px, 20px);
+    box-shadow: none;
+}
+
+.big_arrow{
+    font-weight: 100;
+    font-size: 35px;
+    position: absolute;
+    top: 130px;
+    right: 45px;
+}
+
+.yellow_box{
+    width: 600px;
+    height: 150px;
+    background-color: gold;
+    position: absolute;
+    bottom: 0;
+    right: -600px;
+    animation: yellow_ani 1.2s 1 forwards;
+   
+    
+}
+
+@keyframes yellow_ani{
+    100%{
+        right: 0;
+    }
+}
+/* section end */
+

@@ -1,0 +1,15 @@
+.arrow{
+    animation: arrow_ani 0.7s infinite alternate linear;
+}
+
+@keyframes arrow_ani{
+
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(20px);
+    }
+
+}
